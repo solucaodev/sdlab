@@ -2,6 +2,9 @@
 
 function CpfValido(cpf) {
     if (cpf == "00000000000") return false;
+
+    cpf = cpf.replace(/[^\d]+/g, '');
+
     if (cpf.length != 11) return false;
 
     var soma = 0;
