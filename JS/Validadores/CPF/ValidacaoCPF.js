@@ -1,3 +1,5 @@
+// https://solucao.dev
+
 function CpfValido(cpf) {
     if (cpf == "00000000000") return false;
     if (cpf.length != 11) return false;
