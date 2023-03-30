@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geração de Senha Segura</title>
+    <script src="GeracaoSenhaSegura.js"></script>
+</head>
+
+<body>
+    <!-- https://solucao.dev -->
+    <input type="checkbox" id="campoUsaMinusculas" name="campoUsaMinusculas" checked />
+    <label for="campoUsaMinusculas">Usa Caracteres Minúsculos (a-z)?</label><br />
+
+    <input type="checkbox" id="campoUsaMaiusculas" name="campoUsaMaiusculas" checked />
+    <label for="campoUsaMaiusculas">Usa Caracteres Maiúsculos (A-Z)?</label><br />
+
+    <input type="checkbox" id="campoUsaNumeros" name="campoUsaNumeros" checked />
+    <label for="campoUsaNumeros">Usa Números (0-9)?</label><br />
+
+    <input type="checkbox" id="campoUsaEspeciais" name="campoUsaEspeciais" checked />
+    <label for="campoUsaEspeciais">Usa Caracteres Especiais ([]-*!%@&^#)?</label><br />
+
+    <label>Tamanho</label>
+    <input type="number" id="campoTamanho" value="12" style="width: 50px;" maxlength="2" />
+
+    <br /><br />
+
+    <label>Senha Segura</label><br />
+    <input type="text" id="campoSenhaSeguraGerada"><br />
+    <button onclick="GerarSenha()">Gerar Senha</button>
+</body>
+
+</html>
