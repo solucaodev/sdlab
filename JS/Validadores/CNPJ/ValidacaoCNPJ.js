@@ -35,7 +35,6 @@ function CnpjValido(cnpj) {
         return false;
 
     return true;
-
 }
 
 function ValidarCnpj() {
