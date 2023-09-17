@@ -19,6 +19,7 @@ namespace ValidacaoEmailTest
 
             // Retorna Inválido
             ValidadorDeEmail.EmailValido("j@j").Should().BeFalse();
+            ValidadorDeEmail.EmailValido("@gmail...com").Should().BeFalse();
             ValidadorDeEmail.EmailValido("@gmail.com").Should().BeFalse();
             ValidadorDeEmail.EmailValido("joaovs@.com").Should().BeFalse();
             ValidadorDeEmail.EmailValido("joaovs@@.com").Should().BeFalse();
