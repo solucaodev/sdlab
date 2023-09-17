@@ -13,7 +13,6 @@ namespace ValidacaoEmail
             if (partes.Length < 2 ) return false;
 
             var pre = partes[0];
-
             if (pre.Length == 0) return false;
 
             var validadorPre = new Regex("^[a-zA-Z0-9_.-/+]+$");
