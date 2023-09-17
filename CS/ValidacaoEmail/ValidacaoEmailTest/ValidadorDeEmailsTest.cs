@@ -1,4 +1,6 @@
 using ValidacaoEmail;
+global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using FluentAssertions;
 
 namespace ValidacaoEmailTest
 {
